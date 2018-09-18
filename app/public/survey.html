@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>'Friend' Finder - Survey</title>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -20,7 +20,16 @@
   </script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>n
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+    #match-name {
+      text-align:center;
+    }
+    #match-img {
+      width:100%;
+    }
+  </style>
 
 
 </head>
@@ -42,7 +51,7 @@
   <hr>
 
   <h3><strong>Question 1</strong></h3>
-  <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+  <h4>I enjoy having pets.</h4>
   <select class="chosen-select" id="q1">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -53,7 +62,7 @@
   </select>
 
   <h3><strong>Question 2</strong></h3>
-  <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+  <h4>I enjoy being around children.</h4>
   <select class="chosen-select" id="q2">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -65,7 +74,7 @@
 
 
   <h3><strong>Question 3</strong></h3>
-  <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+  <h4>I like being outside.</h4>
   <select class="chosen-select" id="q3">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -77,7 +86,7 @@
 
 
   <h3><strong>Question 4</strong></h3>
-  <h4>You rarely do something just out of sheer curiosity.</h4>
+  <h4>I avoid confrontation.</h4>
   <select class="chosen-select" id="q4">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -89,7 +98,7 @@
 
 
   <h3><strong>Question 5</strong></h3>
-  <h4>People can rarely upset you.</h4>
+  <h4>I respond well to constructive criticism.</h4>
   <select class="chosen-select" id="q5">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -101,7 +110,7 @@
 
 
   <h3><strong>Question 6</strong></h3>
-  <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+  <h4>I'm a religious person.</h4>
   <select class="chosen-select" id="q6">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -113,7 +122,7 @@
 
 
   <h3><strong>Question 7</strong></h3>
-  <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+  <h4>Politics are important to me.</h4>
   <select class="chosen-select" id="q7">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -124,7 +133,7 @@
   </select>
 
   <h3><strong>Question 8</strong></h3>
-  <h4>You rarely get carried away by fantasies and ideas.</h4>
+  <h4>Vaccinations are good.</h4>
   <select class="chosen-select" id="q8">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -135,7 +144,7 @@
   </select>
 
   <h3><strong>Question 9</strong></h3>
-  <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+  <h4>I believe that truth = truth.</h4>
   <select class="chosen-select" id="q9">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -146,7 +155,7 @@
   </select>
 
   <h3><strong>Question 10</strong></h3>
-  <h4>You feel more energetic after spending time with a group of people.</h4>
+  <h4>Star Trek is better than Star Wars.</h4>
   <select class="chosen-select" id="q10">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -179,12 +188,13 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h2 class="modal-title"><strong>Best Match</strong></h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
       </div>
       <div class="modal-body">
         <h2 id="match-name"></h2>
-        <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+        <img id="match-img" src="" alt="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
