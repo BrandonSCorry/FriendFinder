@@ -1,5 +1,5 @@
 {
-  "name": "FriendFinder",
+  "name": "friendfinder",
   "version": "1.0.0",
   "description": "Find friends with similar interests using a compatibility score",
   "main": "server.js",

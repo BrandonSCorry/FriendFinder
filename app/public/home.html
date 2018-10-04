@@ -1,20 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>'Friend' Finder...   ;)</title>
+  <title>'Friend' Finder - Survey</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Font Awesome Glyphicons -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
 
   <style>
-    .jumbotron {
-      text-align:center;
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+      text-align: center;
     }
+
+
+    button {
+      width:100%;
+    }
+
+    .btn{
+      background-color: dodgerblue;
+      color: white;
+    }
+    .btn:visited{
+      background-color: dodgerblue;
+    }
+    .btn:hover {
+      background-color: steelblue;
+    }
+    .btn:active{
+      background-color: cornflowerblue;
+    }
+    .btn:focus{
+      background-color: cornflowerblue;
+    }
+
   </style>
 
 </head>
@@ -24,14 +59,16 @@
 <div class="container">
 
   <div class="jumbotron">
-    <h1><i class="fa fa-facebook-square" aria-hidden="true"></i>Friend Finder</h1>
+
+
+    <h1><i class="medium material-icons prefix blue-text">accessibility</i>Friend Finder</h1>
     <hr>
     <h2>Take a personality survey... </h2>
     <h2>and find friends with similar preferences!</h2>
     <br>
 
     <div>
-      <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span>Start the survey</h4></button></a>
+      <a href="/survey"><button type="button" class="btn btn-large waves-effect waves-blue"><h6>Start the survey</h6></button></a>
     </div>
 
   </div>
@@ -49,6 +86,9 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 
 </html>
